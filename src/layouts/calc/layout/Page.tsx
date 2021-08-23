@@ -1,9 +1,9 @@
 import React from "react";
 
 import { ReduxType } from "../../../container/Container";
-import PageTemplate from "../../../layouts/PageTemplate";
+import PageTemplate from "../../PageTemplate";
 import Header from "./Header";
-import Content from "./Content";
+import Calc from "./Calc";
 
 type TState = {
   isOpen: boolean;
@@ -28,7 +28,7 @@ class Page extends React.Component<ReduxType, TState> {
       <PageTemplate
         Drawer={ null }
         Header={ <Header open={this.state.isOpen} /> }
-        Content={ <Content open={this.state.isOpen} {...this.props} /> }
+        Content={ <Calc /> }
       />
     );
   }

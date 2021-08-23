@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReduxType } from "../container/Container";
+import { ReduxType } from "../../../container/Container";
 import PageTemplate from "../../PageTemplate";
 import Header from "./Header";
 import Content from "./Content";

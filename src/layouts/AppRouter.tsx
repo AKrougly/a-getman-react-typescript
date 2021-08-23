@@ -15,12 +15,13 @@ import ErrorWrapper from "./ErrorWrapper";
 import NotifyWrapper from "./NotifyWrapper";
 import mainPage from './mainLayout/views/Page';
 import requestsPage from "./requestsLayout/views/Page";
+import calcPage from "./calc/layout/Page";
 import palettePage from "./paletteLayout/views/Page";
 
 interface IRoute {
   key?: number
   path: string
-  component: React.ComponentType
+  component: React.Component
   exact: boolean
 }
 
@@ -30,6 +31,7 @@ const routeList: IRouteList = [
   // {path: '', component: React.ComponentType, [exact]}
   { path: "/", component: mainPage, exact: true, },
   { path: "/requests", component: requestsPage, exact: true, },
+  { path: "/calc", component: calcPage, exact: true, },
   { path: "/palette", component: palettePage, exact: true, },
 ];
 

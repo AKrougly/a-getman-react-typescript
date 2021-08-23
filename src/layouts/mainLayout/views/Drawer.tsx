@@ -16,6 +16,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import SettingsIcon from '@material-ui/icons/Settings';
+import CalculateIcon from '@material-ui/icons/Apps';
 import SendIcon from '@material-ui/icons/Send';
 
 import DrawerItem from "./DrawerItem";
@@ -33,6 +34,7 @@ export const routeList = [
     header: "",
     items: [
       { type: "item", title: "Requests", href: "/requests", Icon: SendIcon },
+      { type: "item", title: "Calculator", href: "/calc", Icon: CalculateIcon },
       { type: "item", title: "Palette", href: "/palette", Icon: SettingsIcon },
     ]
   }
