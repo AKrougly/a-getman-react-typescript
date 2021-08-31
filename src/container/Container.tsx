@@ -35,7 +35,7 @@ const mapStateToProps = ( appState: IAppState) => {
 const mapDispatcherToProps = (dispatch: ThunkDispatch<IAppState, void, AppActions>) => {
   return {
     loadState: () => dispatch(loadState()),
-    importItems: (file: string) => dispatch(importItems(file)),
+    importItems: (file: File) => dispatch(importItems(file)),
     exportItems: () => dispatch(exportItems()),
     addItem: (item: IItem) => dispatch(addItem(item)),
     changeItem: (item: IItem) => dispatch(changeItem(item)),

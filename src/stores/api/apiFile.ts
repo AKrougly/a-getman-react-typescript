@@ -6,7 +6,7 @@ import {
 	exportItemsSuccess,
 } from '../actions';
 
-export function importItems(file: Blob) {
+export function importItems(file: File) {
 	return dispatch => {
 		dispatch(importItemsStarted());
 	
